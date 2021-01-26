@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "makemyquiz"
+    }
+  },
+  "defaultProject": "makemyquiz",
+  "cli": {
+    "analytics": false
+  }
 }
