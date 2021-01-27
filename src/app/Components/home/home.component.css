@@ -1,0 +1,23 @@
+.home-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+.header{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 64px;
+}
+.home-container{
+    height: 100vh;
+    position: relative;
+    background: url('../../../assets/main-bg.jpg') center center no-repeat;
+    background-size: contain;
+}
+h5{
+    font-size: 18px;
+}
+.overlay{
+    height: 100%;
+    background: linear-gradient(90deg, white, white, transparent, transparent,white, white);
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  homepage: boolean;
+
+  constructor(router: Router) {
+    router.events.subscribe(val => {
+      if (router.url === '/') {
+        this.homepage = true;
+      } else {
+        this.homepage = false;
+      }
+    });
+  }
 
   ngOnInit(): void {
   }
